@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Trang Tour Project</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="css/animate.css">
+	
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="css/jquery.timepicker.css">
+
+	
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<style>
+		.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Trang<span>Travel Agency</span></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+					<!--ลบ-->
+					<li class="nav-item"><a href="destination.html" class="nav-link">Destination</a></li>
+					
+					<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+					<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- END nav -->
+	
+	<div class="hero-wrap js-fullheight" style="background-image: url('https://www.khaosod.co.th/wpapp/uploads/2023/04/%E0%B8%8A%E0%B8%B2%E0%B8%A2%E0%B8%AB%E0%B8%B2%E0%B8%94%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%94%E0%B8%B5%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%AA%E0%B8%B8%E0%B8%94%E0%B9%83%E0%B8%99%E0%B9%82%E0%B8%A5%E0%B8%81-010.jpg');">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
+				<div class="col-md-7 ftco-animate">
+					<span class="subheading">Welcome to Trang</span>
+					<h1 class="mb-4">Discover Your Favorite Place with Us</h1>
+					<p class="caps">Travel to the any corner of the world, without going around in circles</p>
+				</div>
+				<a href="https://vimeo.com/45830194" class="icon-video popup-vimeo d-flex align-items-center justify-content-center mb-4">
+					<span class="fa fa-play"></span>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<section class="ftco-section ftco-no-pb ftco-no-pt">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="ftco-search d-flex justify-content-center">
+						<div class="row">
+							<div class="col-md-12 nav-link-wrap">
+								<div class="nav nav-pills text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+									<a class="nav-link active mr-md-1" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Search Tour</a>
+
+									
+
+								</div>
+							</div>
+							<div class="col-md-12 tab-wrap">
+								
+								<div class="tab-content" id="v-pills-tabContent">
+
+									<div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-nextgen-tab">
+										<form action="#" class="search-property-1">
+											<div class="row no-gutters">
+												<div class="col-md d-flex">
+													<div class="form-group p-4 border-0">
+														<label for="#">Destination</label>
+														<div class="form-field">
+															<div class="icon"><span class="fa fa-search"></span></div>
+															<input type="text" class="form-control" placeholder="Search place">
+														</div>
+													</div>
+												</div>
+												<div class="col-md d-flex">
+													<div class="form-group p-4">
+														<label for="#">Check-in date</label>
+														<div class="form-field">
+															<div class="icon"><span class="fa fa-calendar"></span></div>
+															<input type="text" class="form-control checkin_date" placeholder="Check In Date">
+														</div>
+													</div>
+												</div>
+												<div class="col-md d-flex">
+													<div class="form-group p-4">
+														<label for="#">Check-out date</label>
+														<div class="form-field">
+															<div class="icon"><span class="fa fa-calendar"></span></div>
+															<input type="text" class="form-control checkout_date" placeholder="Check Out Date">
+														</div>
+													</div>
+												</div>
+												<div class="col-md d-flex">
+													<div class="form-group p-4">
+														<label for="#">Price Limit</label>
+														<div class="form-field">
+															<div class="select-wrap">
+																<div class="icon"><span class="fa fa-chevron-down"></span></div>
+																<select name="" id="" class="form-control">
+																	<option value="">$100</option>
+																	<option value="">$10,000</option>
+																	<option value="">$50,000</option>
+																	<option value="">$100,000</option>
+																	<option value="">$200,000</option>
+																	<option value="">$300,000</option>
+																	<option value="">$400,000</option>
+																	<option value="">$500,000</option>
+																	<option value="">$600,000</option>
+																	<option value="">$700,000</option>
+																	<option value="">$800,000</option>
+																	<option value="">$900,000</option>
+																	<option value="">$1,000,000</option>
+																	<option value="">$2,000,000</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-md d-flex">
+													<div class="form-group d-flex w-100 border-0">
+														<div class="form-field w-100 align-items-center d-flex">
+															<input type="submit" value="Search" class="align-self-stretch form-control btn btn-primary">
+														</div>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+
+									<div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-performance-tab">
+										<form action="#" class="search-property-1">
+											<div class="row no-gutters">
+												<div class="col-lg d-flex">
+													<div class="form-group p-4 border-0">
+														<label for="#">Destination</label>
+														<div class="form-field">
+															<div class="icon"><span class="fa fa-search"></span></div>
+															<input type="text" class="form-control" placeholder="Search place">
+														</div>
+													</div>
+												</div>
+												<div class="col-lg d-flex">
+													<div class="form-group p-4">
+														<label for="#">Check-in date</label>
+														<div class="form-field">
+															<div class="icon"><span class="fa fa-calendar"></span></div>
+															<input type="text" class="form-control checkin_date" placeholder="Check In Date">
+														</div>
+													</div>
+												</div>
+												<div class="col-lg d-flex">
+													<div class="form-group p-4">
+														<label for="#">Check-out date</label>
+														<div class="form-field">
+															<div class="icon"><span class="fa fa-calendar"></span></div>
+															<input type="text" class="form-control checkout_date" placeholder="Check Out Date">
+														</div>
+													</div>
+												</div>
+												<div class="col-lg d-flex">
+													<div class="form-group p-4">
+														<label for="#">Price Limit</label>
+														<div class="form-field">
+															<div class="select-wrap">
+																<div class="icon"><span class="fa fa-chevron-down"></span></div>
+																<select name="" id="" class="form-control">
+																	<option value="">$100</option>
+																	<option value="">$10,000</option>
+																	<option value="">$50,000</option>
+																	<option value="">$100,000</option>
+																	<option value="">$200,000</option>
+																	<option value="">$300,000</option>
+																	<option value="">$400,000</option>
+																	<option value="">$500,000</option>
+																	<option value="">$600,000</option>
+																	<option value="">$700,000</option>
+																	<option value="">$800,000</option>
+																	<option value="">$900,000</option>
+																	<option value="">$1,000,000</option>
+																	<option value="">$2,000,000</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg d-flex">
+													<div class="form-group d-flex w-100 border-0">
+														<div class="form-field w-100 align-items-center d-flex">
+															<input type="submit" value="Search" class="align-self-stretch form-control btn btn-primary p-0">
+														</div>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="ftco-section services-section">
+			<div class="container">
+				<div class="row d-flex">
+					<div class="col-md-6 order-md-last heading-section pl-md-5 ftco-animate d-flex align-items-center">
+						<div class="w-100">
+							<span class="subheading">Welcome to Trang</span>
+							<h2 class="mb-4">Sea Island Mountain Food Nature All in Trang</h2>
+							<p>Trang Province, located in Thailand, is a place of captivating beauty and a hub of culture and natural wonders in the southern region of the country. Despite its distance, it possesses its own charm and allure that you wouldn't want to miss experiencing.</p>
+							<p>Here, you'll encounter breathtaking vistas of nature, with majestic mountains, lush forests, and stunning sandy beaches that lend enchantment to this province. It's an intriguing tourist destination with a rich history and diverse culture. Trang is also home to warm and friendly communities, where you'll find delicious cuisine and unforgettable experiences that will stay with you forever.</p>
+							<p><a href="#" class="btn btn-primary py-3 px-4">Search Destination</a></p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="row">
+							<div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+								<div class="services services-1 color-1 d-block img" style="background-image: url(https://cms.dmpcdn.com/travel/2022/04/03/d276b790-b2f5-11ec-a390-2573a6cdc402_webp_original.jpg);">
+									<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-paragliding"></span></div>
+									<div class="media-body">
+										<h3 class="heading mb-3">Activities</h3>
+										<p>A small river named Duden flows by their place and supplies it with the necessary</p>
+									</div>
+								</div>      
+							</div>
+							<div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+								<div class="services services-1 color-2 d-block img" style="background-image: url(https://th.bing.com/th/id/R.6599dcde39ae62a682a7433ac4d53b15?rik=GNJbLSy8E2RILg&pid=ImgRaw&r=0);">
+									<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-route"></span></div>
+									<div class="media-body">
+										<h3 class="heading mb-3">Travel Arrangements</h3>
+										<p>A small river named Duden flows by their place and supplies it with the necessary</p>
+									</div>
+								</div>    
+							</div>
+							<div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+								<div class="services services-1 color-3 d-block img" style="background-image: url(https://topchuyengia.vn/uploads/images/original_images/thailand-travel-2--2982.jpeg);">
+									<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-tour-guide"></span></div>
+									<div class="media-body">
+										<h3 class="heading mb-3">Private Guide</h3>
+										<p>A small river named Duden flows by their place and supplies it with the necessary</p>
+									</div>
+								</div>      
+							</div>
+							<div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+								<div class="services services-1 color-4 d-block img" style="background-image: url(https://www.phuket.net/wp-content/uploads/2011/09/paradise-island-in-trang.jpg);">
+									<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-map"></span></div>
+									<div class="media-body">
+										<h3 class="heading mb-3">Location Manager</h3>
+										<p>A small river named Duden flows by their place and supplies it with the necessary</p>
+									</div>
+								</div>      
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="ftco-section img ftco-select-destination" style="background-image: url(images/bg_3.jpg);">
+			<div class="container">
+				<div class="row justify-content-center pb-4">
+					<div class="col-md-12 heading-section text-center ftco-animate">
+						<span class="subheading">Trang Provide Places</span>
+						<h2 class="mb-4">Select Your Destination</h2>
+					</div>
+				</div>
+			</div>
+			<div class="container container-2">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="carousel-destination owl-carousel ftco-animate">
+							<div class="item">
+								<div class="project-destination">
+									<a href="kohkradan.html" class="img" style="background-image: url(https://image.bangkokbiznews.com/uploads/images/md/2023/04/ISI2jWlEoy54HLA5ctSS.webp?x-image-process=style/LG);">
+										<div class="text">
+											<h3>Koh Kra dan</h3>
+											<span>click</span>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="project-destination">
+									<a href="Kohchuek.html" class="img" style="background-image: url(https://s.isanook.com/tr/0/ui/284/1420799/989f79584887cf7b0aa3737d82c8ecaf_1588238198.jpg);">
+										<div class="text">
+											<h3>Koh Cheuk</h3>
+											<span>click</span>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="project-destination">
+									<a href="PakMengBeach.html" class="img" style="background-image: url(https://cbtthailand.dasta.or.th/upload-file-api/Resources/RelateAttraction/Images/RAT920017/1.jpeg);">
+										<div class="text">
+											<h3>Pak Meng Beach</h3>
+											<span>click</span>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="project-destination">
+									<a href="KohLibong.html" class="img" style="background-image: url(https://trangcorner.com/wp-content/uploads/2020/07/IMG_E0764-scaled.jpg);">
+										<div class="text">
+											<h3>Koh Li Bong</h3>
+											<span>click</span>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="project-destination">
+									<a href="Kohmook.html" class="img" style="background-image: url(https://www.thaiticketmajor.com/imgUpload/images/%E0%B8%96%E0%B9%89%E0%B8%B3%E0%B8%A1%E0%B8%A3%E0%B8%81%E0%B8%95-%E0%B9%80%E0%B8%81%E0%B8%B2%E0%B8%B0%E0%B8%A1%E0%B8%B8%E0%B8%81-7.jpg);">
+										<div class="text">
+											<h3>Koh Mook</h3>
+											<span>click</span>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="project-destination">
+									<a href="kohngai.html" class="img" style="background-image: url(https://tatapi.tourismthailand.org/tatfs/Image/CustomPOI/Picture/P03000917_1.jpeg);">
+										<div class="text">
+											<h3>Koh ng-ai</h3>
+											<span>click</span>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="project-destination">
+									<a href="kohlaoliang" class="img" style="background-image: url(https://travel.mthai.com/app/uploads/2017/04/53893322_2074926852589018_2852199983552135168_n.jpg);">
+										<div class="text">
+											<h3>Koh Lao Liang</h3>
+											<span>click</span>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="project-destination">
+									<a href="kohsukorn.html" class="img" style="background-image: url(https://img.kapook.com/image/Travel_1/sea/E6381928-2.jpg);">
+										<div class="text">
+											<h3>Koh Sukorn</h3>
+											<span>click</span>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="project-destination">
+									<a href="kohmah.html" class="img" style="background-image: url(https://navasun.co.th/medias/koh-chuek-2.jpg);">
+										<div class="text">
+											<h3>Koh Mah</h3>
+											<span>click</span>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="project-destination">
+									<a href="#" class="img" style="background-image: url(https://chillpainai.com/storage/voucher/jarawee-tour/4-islands/emerald-cave/973d7e7db5c96a2c0eb3004f9514c07862cda358-1.jpg);">
+										<div class="text">
+											<h3>Emeral Cave</h3>
+											<span>click</span>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="project-destination">
+									<a href="#" class="img" style="background-image: url(https://www.makalius.co.th/wp-content/post-images/164909-post/-567-790x363.jpg);">
+										<div class="text">
+											<h3>Wang Pha Mek</h3>
+											<span>click</span>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="project-destination">
+									<a href="#" class="img" style="background-image: url(https://img.wongnai.com/p/400x0/2018/12/28/47c2c35f5733481499f900ec2696d9a5.jpg);">
+										<div class="text">
+											<h3>Old Building</h3>
+											<span>click</span>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="ftco-section">
+			<div class="container">
+				<div class="row justify-content-center pb-4">
+					<div class="col-md-12 heading-section text-center ftco-animate">
+						<span class="subheading">Destination</span>
+						<h2 class="mb-4">Tour Destination</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 ftco-animate">
+						<div class="project-wrap">
+							<a href="#" class="img" style="background-image: url(https://www.outthere.travel/wp-content/uploads/2020/06/KohKradanDrone_FIN.jpg);">
+								<span class="price">฿550/person</span>
+							</a>
+							<div class="text p-4">
+								<span class="days">3 Days Tour</span>
+								<h3><a href="destinationKohkradan.html">Koh Kra Dan</a></h3>
+								<p class="location"><span class="fa fa-map-marker"></span> Trang, Thailand</p>
+								<ul>
+									<li><span class="flaticon-shower"></span>2</li>
+									<li><span class="flaticon-king-size"></span>3</li>
+									<li><span class="flaticon-mountains"></span>Near Beach</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 ftco-animate">
+						<div class="project-wrap">
+							<a href="#" class="img" style="background-image: url(https://4.bp.blogspot.com/-PqdgSNVpt3k/Wr4Cm4bHHvI/AAAAAAAAaQ0/v8JvQsl91sYVPCZHD8P2DfTq7WnQtqjCwCEwYBhgL/s1600/2765151_orig.jpg);">
+								<span class="price">฿1,550/person</span>
+							</a>
+							<div class="text p-4">
+								<span class="days">7 Days Tour</span>
+								<h3><a href="destinationOldbuilding.html">Old Building</a></h3>
+								<p class="location"><span class="fa fa-map-marker"></span> Meung Trang, Trang, Thailand</p>
+								<ul>
+									<li><span class="flaticon-shower"></span>2</li>
+									<li><span class="flaticon-king-size"></span>3</li>
+									<li><span class="flaticon-sun-umbrella"></span>Near City</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 ftco-animate">
+						<div class="project-wrap">
+							<a href="#" class="img" style="background-image: url(https://s-media-cache-ak0.pinimg.com/originals/af/fa/65/affa6545d16935417e78adb5e2e946f9.jpg);">
+								<span class="price">฿550/person</span>
+							</a>
+							<div class="text p-4">
+								<span class="days">7 Days Tour</span>
+								<h3><a href="destinationKohmook.html">Koh Mook</a></h3>
+								<p class="location"><span class="fa fa-map-marker"></span> Trang, Thailand</p>
+								<ul>
+									<li><span class="flaticon-shower"></span>2</li>
+									<li><span class="flaticon-king-size"></span>3</li>
+									<li><span class="flaticon-sun-umbrella"></span>Near Beach</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 ftco-animate">
+						<div class="project-wrap">
+							<a href="#" class="img" style="background-image: url(https://ik.imagekit.io/tvlk/blog/2022/08/01.Wang-Pha-Mek.jpg?tr=dpr-2,w-675);">
+								<span class="price">฿550/person</span>
+							</a>
+							<div class="text p-4">
+								<span class="days">8 Days Tour</span>
+								<h3><a href="destinationWangphamek.html">Wang Pha Mek</a></h3>
+								<p class="location"><span class="fa fa-map-marker"></span> Trang, Thailand</p>
+								<ul>
+									<li><span class="flaticon-shower"></span>2</li>
+									<li><span class="flaticon-king-size"></span>3</li>
+									<li><span class="flaticon-sun-umbrella"></span>Near Mountain</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 ftco-animate">
+						<div class="project-wrap">
+							<a href="#" class="img" style="background-image: url(https://image.kkday.com/v2/image/get/s1.kkday.com/product_23092/20190419101028_A6Ikn/jpg);">
+								<span class="price">฿550/person</span>
+							</a>
+							<div class="text p-4">
+								<span class="days">10 Days Tour</span>
+								<h3><a href="destinationKohCheuk.html">Koh Cheuk</a></h3>
+								<p class="location"><span class="fa fa-map-marker"></span> Trang, Thailand</p>
+								<ul>
+									<li><span class="flaticon-shower"></span>2</li>
+									<li><span class="flaticon-king-size"></span>3</li>
+									<li><span class="flaticon-sun-umbrella"></span>Near Beach</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 ftco-animate">
+						<div class="project-wrap">
+							<a href="#" class="img" style="background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/5b/8a/7e/caption.jpg?w=1200&h=-1&s=1);">
+								<span class="price">฿550/person</span>
+							</a>
+							<div class="text p-4">
+								<span class="days">7 Days Tour</span>
+								<h3><a href="destinationKohkradan.html">Thum Morakot</a></h3>
+								<p class="location"><span class="fa fa-map-marker"></span> Trang, Thailand</p>
+								<ul>
+									<li><span class="flaticon-shower"></span>2</li>
+									<li><span class="flaticon-king-size"></span>3</li>
+									<li><span class="flaticon-sun-umbrella"></span>Near cave</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="ftco-section ftco-about img" style="background-image: url(https://lp-cms-production.imgix.net/2022-02/iStock-512550084%20RFC.jpg?auto=format&w=1920&h=640&fit=crop&crop=faces,edges&q=75);">
+			<div class="overlay"></div>
+			<div class="container py-md-5">
+				<div class="row py-md-5">
+					<div class="col-md d-flex align-items-center justify-content-center">
+						<a href="https://www.youtube.com/embed/v0zEHIc36kc?si=SyEIY-UEOjNa_B9i" class="icon-video d-flex align-items-center justify-content-center mb-4">
+							<span class="fa fa-play"></span>
+						</a>
+					</div>
+					<div class="popup-overlay">
+						<div class="popup-content col-md d-flex align-items-center justify-content-center">
+							<span class="popup-close">&times;</span>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/v0zEHIc36kc?si=SyEIY-UEOjNa_B9i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen >
+								<span class="fa fa-play"></span>
+							</iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+
+		<section class="ftco-section ftco-about ftco-no-pt img">
+			<div class="container">
+				<div class="row d-flex">
+					<div class="col-md-12 about-intro">
+						<div class="row">
+							<div class="col-md-6 d-flex align-items-stretch">
+								<div class="img d-flex w-100 align-items-center justify-content-center" style="background-image:url(https://deartravallure.com/wp-content/uploads/2020/06/Dugong-Native-to-Trang-1440x960.jpg);">
+								</div>
+							</div>
+							<div class="col-md-6 pl-md-5 py-5">
+								<div class="row justify-content-start pb-3">
+									<div class="col-md-12 heading-section ftco-animate">
+										<span class="subheading">About Us</span>
+										<h2 class="mb-4">Good trip Good Memories</h2>
+										<p>Welcome to our travel agency, where we strive to make your journey both memorable and safe. Nestled far away, amidst the picturesque landscapes, lies our haven for wanderlust souls. Our mission is to create an unforgettable experience for travelers exploring the enchanting province of Trang, Thailand.</p>
+										<p><a href="#" class="btn btn-primary">Book Your Destination</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="ftco-section testimony-section bg-bottom" style="background-image: url(images/bg_1.jpg);">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row justify-content-center pb-4">
+					<div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+						<span class="subheading">Testimonial</span>
+						<h2 class="mb-4">Tourist Feedback</h2>
+					</div>
+				</div>
+				<div class="row ftco-animate">
+					<div class="col-md-12">
+						<div class="carousel-testimony owl-carousel">
+							<div class="item">
+								<div class="testimony-wrap py-4">
+									<div class="text">
+										<p class="star">
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+										</p>
+										<p class="mb-4">ทุกวันที่อยู่ที่ตรังเหมือนกับการเข้าสู่โลกแห่งการผจญภัยและความสนุก ทุกชั่วโมงที่ผ่านไปเป็นเอนจอยที่ไม่มีวันลืม</p>
+										<div class="d-flex align-items-center">
+											<div class="user-img" style="background-image: url(https://yt3.googleusercontent.com/ytc/APkrFKaM6ZUWDYYkSAbr0kmVbkoUF9ltWrccIUxqBxZv=s900-c-k-c0x00ffffff-no-rj)"></div>
+											<div class="pl-3">
+												<p class="name">Nadech Kugimiya</p>
+												<span class="position">Actor</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="testimony-wrap py-4">
+									<div class="text">
+										<p class="star">
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+										</p>
+										<p class="mb-4">การเดินทางไปท่องเที่ยวที่ตรังเป็นช่วงเวลาที่เราสนุกสนานและเติบโตอย่างเต็มที่ มันเป็นประสบการณ์ที่เป็นเอนจอยและทำให้หัวใจเต้นเร็วอย่างสมชื่นที่ไม่มีที่ไหนเหมือน</p>
+										<div class="d-flex align-items-center">
+											<div class="user-img" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Urassaya_Sperbund_in_October_2022.png/330px-Urassaya_Sperbund_in_October_2022.png)"></div>
+											<div class="pl-3">
+												<p class="name">Urassaya Sperbund</p>
+												<span class="position">Actress</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="testimony-wrap py-4">
+									<div class="text">
+										<p class="star">
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+										</p>
+										<p class="mb-4">トランへの旅行は、私たちにとって楽しみながら最大限に成長する時間でした。他では味わえない、楽しくてドキドキする体験です。</p>
+										<div class="d-flex align-items-center">
+											<div class="user-img" style="background-image: url(https://f.ptcdn.info/271/055/000/p19f1oleedELrMnMcsA-o.jpg)"></div>
+											<div class="pl-3">
+												<p class="name">Ayase Haruka</p>
+												<span class="position">Marketing Manager</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="testimony-wrap py-4">
+									<div class="text">
+										<p class="star">
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+										</p>
+										<p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+										<div class="d-flex align-items-center">
+											<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+											<div class="pl-3">
+												<p class="name">Alexander Zeus</p>
+												<span class="position">Marketing Manager</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="testimony-wrap py-4">
+									<div class="text">
+										<p class="star">
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+										</p>
+										<p class="mb-4">away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+										<div class="d-flex align-items-center">
+											<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
+											<div class="pl-3">
+												<p class="name">Poseidon Water</p>
+												<span class="position">Private Business</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="ftco-section">
+			<div class="container">
+				<div class="row justify-content-center pb-4">
+					<div class="col-md-12 heading-section text-center ftco-animate">
+						<span class="subheading">Our Blog</span>
+						<h2 class="mb-4">Recent Post</h2>
+					</div>
+				</div>
+				<div class="row d-flex">
+					<div class="col-md-4 d-flex ftco-animate">
+						<div class="blog-entry justify-content-end">
+							<a href="blog-single.html" class="block-20" style="background-image: url('https://www.thailand.go.th/uploads/posts/photo_1684340259_1.jpeg');">
+							</a>
+							<div class="text">
+								<div class="d-flex align-items-center mb-4 topp">
+									<div class="one">
+										<span class="day">18</span>
+									</div>
+									<div class="two">
+										<span class="yr">2024</span>
+										<span class="mos">September</span>
+									</div>
+								</div>
+								<h3 class="heading"><a href="#">Most Popular sea In Trang</a></h3>
+								<!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> -->
+								<p><a href="#" class="btn btn-primary">Read more</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 d-flex ftco-animate">
+						<div class="blog-entry justify-content-end">
+							<a href="blog-single.html" class="block-20" style="background-image: url('https://media.cnn.com/api/v1/images/stellar/prod/150717143300-islands-of-trang-koh-maa-koh-chueak-koh-wan.jpg?q=w_1600,h_900,x_0,y_0,c_fill/h_618');">
+							</a>
+							<div class="text">
+								<div class="d-flex align-items-center mb-4 topp">
+									<div class="one">
+										<span class="day">24</span>
+									</div>
+									<div class="two">
+										<span class="yr">2023</span>
+										<span class="mos">December</span>
+									</div>
+								</div>
+								<h3 class="heading"><a href="#">Most Popular Island In Trang</a></h3>
+								<!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> -->
+								<p><a href="#" class="btn btn-primary">Read more</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 d-flex ftco-animate">
+						<div class="blog-entry">
+							<a href="blog-single.html" class="block-20" style="background-image: url('https://www.alltrails.com/api/alltrails/v2/trails/11089447/photos/0?size=larger_wide&key=3p0t5s6b5g4g0e8k3c1j3w7y5c3m4t8i');">
+							</a>
+							<div class="text">
+								<div class="d-flex align-items-center mb-4 topp">
+									<div class="one">
+										<span class="day">1</span>
+									</div>
+									<div class="two">
+										<span class="yr">2024</span>
+										<span class="mos">January</span>
+									</div>
+								</div>
+								<h3 class="heading"><a href="#">Most Popular Mountain In Trang</a></h3>
+								<!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> -->
+								<p><a href="#" class="btn btn-primary">Read more</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="ftco-intro ftco-section ftco-no-pt">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-12 text-center">
+						<div class="img"  style="background-image: url(https://a.cdn-hotels.com/gdcs/production132/d982/6d60fafb-f428-44d6-ab60-37c563f5b230.jpg);">
+							<div class="overlay"></div>
+							<h2>We Are Trang Travel Agency</h2>
+							<p>We can manage your dream building A small river named Duden flows by their place</p>
+							<p class="mb-0"><a href="#" class="btn btn-primary px-4 py-3">Ask For A Quote</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="ftco-footer bg-bottom ftco-no-pt" style="background-image: url(images/bg_3.jpg);">
+			<div class="container">
+				<div class="row mb-5">
+					<div class="col-md pt-5">
+						<div class="ftco-footer-widget pt-md-5 mb-4">
+							<h2 class="ftco-heading-2">About</h2>
+							<p>Mueang Phraya Ratsada The people are generous. Delicious grilled pork Birthplace of rubber Outstanding and elegant Sitrang flowers undersea coral Charming Sai Ngam Beach Stunningly beautiful waterfall</p>
+							<ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+								<li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+								<li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+								<li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md pt-5 border-left">
+						<div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
+							<h2 class="ftco-heading-2">Infromation</h2>
+							<ul class="list-unstyled">
+								<li><a href="#" class="py-2 d-block">Online Enquiry</a></li>
+								<li><a href="#" class="py-2 d-block">General Enquiries</a></li>
+								<li><a href="#" class="py-2 d-block">Booking Conditions</a></li>
+								<li><a href="#" class="py-2 d-block">Privacy and Policy</a></li>
+								<li><a href="#" class="py-2 d-block">Refund Policy</a></li>
+								<li><a href="#" class="py-2 d-block">Call Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md pt-5 border-left">
+						<div class="ftco-footer-widget pt-md-5 mb-4">
+							<h2 class="ftco-heading-2">Experience</h2>
+							<ul class="list-unstyled">
+								<li><a href="#" class="py-2 d-block">Adventure</a></li>
+								<li><a href="#" class="py-2 d-block">Hotel and Restaurant</a></li>
+								<li><a href="#" class="py-2 d-block">Beach</a></li>
+								<li><a href="#" class="py-2 d-block">Nature</a></li>
+								<li><a href="#" class="py-2 d-block">Camping</a></li>
+								<li><a href="#" class="py-2 d-block">Party</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md pt-5 border-left">
+						<div class="ftco-footer-widget pt-md-5 mb-4">
+							<h2 class="ftco-heading-2">Have a Questions?</h2>
+							<div class="block-23 mb-3">
+								<ul>
+									<li><span class="icon fa fa-map-marker"></span><span class="text">Trang</span></li>
+									<li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+66 124 666 7779</span></a></li>
+									<li><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text">TrangTours@yoursite.com</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 text-center">
+
+						<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website was created  <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Computer Engineering and AI</a>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+						</div>
+					</div>
+				</div>
+			</footer>
+			
+			
+
+			<!-- loader -->
+			<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+			<script src="js/jquery.min.js"></script>
+			<script src="js/jquery-migrate-3.0.1.min.js"></script>
+			<script src="js/popper.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/jquery.easing.1.3.js"></script>
+			<script src="js/jquery.waypoints.min.js"></script>
+			<script src="js/jquery.stellar.min.js"></script>
+			<script src="js/owl.carousel.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>
+			<script src="js/jquery.animateNumber.min.js"></script>
+			<script src="js/bootstrap-datepicker.js"></script>
+			<script src="js/scrollax.min.js"></script>
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+			<script src="js/google-map.js"></script>
+			<script src="js/main.js"></script>
+			
+			<script>
+				document.addEventListener('DOMContentLoaded', function() {
+					var popup = document.querySelector('.popup-overlay');
+					var openBtn = document.querySelector('.popup-youtube');
+					var closeBtn = document.querySelector('.popup-close');
+				
+					openBtn.addEventListener('click', function(e) {
+						e.preventDefault();
+						popup.style.display = 'flex';
+					});
+				
+					closeBtn.addEventListener('click', function() {
+						popup.style.display = 'none';
+					});
+				});
+				</script>
+
+		</body>
+		</html>
